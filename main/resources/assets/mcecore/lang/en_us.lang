@@ -1,0 +1,7 @@
+item.ingot_copper.name=Copper Ingot
+
+tile.block_t1metal_copper.name=Copper Block
+tile.block_t1metal_tin.name=Tin Block
+tile.block_t1metal_bronze.name=Bronze Block
+tile.block_t1metal_zinc.name=Zinc Block
+tile.block_t1metal_brass.name=Brass Block

@@ -1,0 +1,10 @@
+{
+    "variants": 
+    {
+        "variant=copper": { "model": "mcecore:block_copper" },
+        "variant=tin": { "model": "mcecore:block_tin" },
+        "variant=bronze": { "model": "mcecore:block_bronze" },
+        "variant=zinc": { "model": "mcecore:block_zinc" },
+        "variant=brass": { "model": "mcecore:block_brass" }
+    }
+}
