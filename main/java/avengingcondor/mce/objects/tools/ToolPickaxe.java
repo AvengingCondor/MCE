@@ -1,26 +1,26 @@
-package avengingcondor.mce.objects.items;
+package avengingcondor.mce.objects.tools;
 
 import avengingcondor.mce.Main;
 import avengingcondor.mce.init.ItemInit;
 import avengingcondor.mce.util.interfaces.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemPickaxe;
 
-public class ItemBase extends Item implements IHasModel
+public class ToolPickaxe extends ItemPickaxe implements IHasModel 
 {
-	public ItemBase(String name)
+	public ToolPickaxe(String name, ToolMaterial material)
 	{
+		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.BASETAB);
+		setCreativeTab(Main.TOOLTAB);
 		
 		ItemInit.ITEMS.add(this);
 	}
-
+	
 	@Override
 	public void registerModels() 
 	{
 		Main.proxy.registerItemRenderer(this, 0, "inventory");	
 	}
-
 }
