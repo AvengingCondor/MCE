@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        " S ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:pickaxe_iron_mce"
+    }
+}

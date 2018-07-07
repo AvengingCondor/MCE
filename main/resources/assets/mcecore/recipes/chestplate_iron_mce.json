@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "I I",
+        "III",
+        "III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:chestplate_iron_mce"
+    }
+}

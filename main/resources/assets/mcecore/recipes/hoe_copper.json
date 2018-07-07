@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "II",
+        " S",
+        " S"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "mcecore:ingot_copper"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:hoe_copper"
+    }
+}

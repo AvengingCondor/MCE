@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        "I I"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "mcecore:ingot_copper"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:helmet_copper"
+    }
+}
