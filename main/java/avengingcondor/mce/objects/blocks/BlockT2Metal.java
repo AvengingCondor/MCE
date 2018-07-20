@@ -4,7 +4,7 @@ import avengingcondor.mce.Main;
 import avengingcondor.mce.init.BlockInit;
 import avengingcondor.mce.init.ItemInit;
 import avengingcondor.mce.objects.blocks.item.ItemBlockVariants;
-import avengingcondor.mce.util.handlers.T1BlockEnumHandler;
+import avengingcondor.mce.util.handlers.T2BlockEnumHandler;
 import avengingcondor.mce.util.interfaces.IHasModel;
 import avengingcondor.mce.util.interfaces.IMetaName;
 import net.minecraft.block.Block;
@@ -22,21 +22,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockT1Metal extends Block implements IHasModel, IMetaName 
+public class BlockT2Metal extends Block implements IHasModel, IMetaName 
 {
 	
-	public static final PropertyEnum<T1BlockEnumHandler.EnumType> VARIANT = PropertyEnum.<T1BlockEnumHandler.EnumType>create("variant", T1BlockEnumHandler.EnumType.class);
+	public static final PropertyEnum<T2BlockEnumHandler.EnumType> VARIANT = PropertyEnum.<T2BlockEnumHandler.EnumType>create("variant", T2BlockEnumHandler.EnumType.class);
 	private String name;
 	
-	public BlockT1Metal(String name, Material material)
+	public BlockT2Metal(String name, Material material)
 	{
 		super(Material.IRON);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.BASETAB);
-		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, T1BlockEnumHandler.EnumType.copper));
-		setHarvestLevel("pickaxe", 1);
-		setHardness(5);
+		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, T2BlockEnumHandler.EnumType.manganese));
+		setHarvestLevel("pickaxe", 4);
+		setHardness(8);
 		
 		this.name = name;
 		
@@ -47,19 +47,19 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public int damageDropped(IBlockState state)
 	{
-		return ((T1BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((T2BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
 	}
 	
 	@Override
 	public int getMetaFromState(IBlockState state)
 	{
-		return ((T1BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((T2BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
 	}
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
-		return this.getDefaultState().withProperty(VARIANT, T1BlockEnumHandler.EnumType.byMetadata(meta));
+		return this.getDefaultState().withProperty(VARIANT, T2BlockEnumHandler.EnumType.byMetadata(meta));
 	}
 	
 	@Override
@@ -71,7 +71,7 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
 	{
-		for(T1BlockEnumHandler.EnumType variant : T1BlockEnumHandler.EnumType.values())
+		for(T2BlockEnumHandler.EnumType variant : T2BlockEnumHandler.EnumType.values())
 		{
 			items.add(new ItemStack(this, 1, variant.getMeta()));
 		}
@@ -86,15 +86,15 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public String getSpecialName (ItemStack stack)
 	{
-		return T1BlockEnumHandler.EnumType.values()[stack.getItemDamage()].getName();
+		return T2BlockEnumHandler.EnumType.values()[stack.getItemDamage()].getName();
 	}
 	
 	@Override
 	public void registerModels() 
 	{
-		for (int i=0; i < T1BlockEnumHandler.EnumType.values().length; i++)
+		for (int i=0; i < T2BlockEnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "block_" + T1BlockEnumHandler.EnumType.values()[i].getName(), "inventory");
+			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "block_" + T2BlockEnumHandler.EnumType.values()[i].getName(), "inventory");
 		}
 	}
 }

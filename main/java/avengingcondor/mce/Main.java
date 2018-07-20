@@ -1,5 +1,6 @@
 package avengingcondor.mce;
 
+import avengingcondor.mce.init.SmeltingInit;
 import avengingcondor.mce.proxy.CommonProxy;
 import avengingcondor.mce.tabs.BasicTab;
 import avengingcondor.mce.tabs.ToolTab;
@@ -30,7 +31,10 @@ public class Main
     public static void preInit(FMLPreInitializationEvent event) {}
     
     @EventHandler
-    public void init(FMLInitializationEvent event) {} 
+    public void init(FMLInitializationEvent event) 
+    {
+    	SmeltingInit.init();
+    } 
     
     @EventHandler
     public void postinit(FMLPostInitializationEvent event) {}

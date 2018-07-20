@@ -12,7 +12,7 @@ import net.minecraft.item.ItemBlock;
 
 public class BlockBase extends Block implements IHasModel
 {
-	public BlockBase(String name, Material material, String tool, int harvest, float hardness)
+	public BlockBase(String name, Material material, String tool, int harvest, float hardness, float resistance)
 	{
 		super(material);
 		setUnlocalizedName(name);
@@ -20,6 +20,7 @@ public class BlockBase extends Block implements IHasModel
 		setCreativeTab(Main.BASETAB);
 		setHarvestLevel(tool, harvest);
 		setHardness(hardness);
+		setResistance(resistance);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
