@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        "III",
+        "III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "mcecore:ingot_steel"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:block_t2metal",
+        "data": 1
+    }
+}

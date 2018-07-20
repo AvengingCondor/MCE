@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        "III",
+        "III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "mcecore:ingot_xolgite"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:block_t2metal",
+        "data": 5
+    }
+}
