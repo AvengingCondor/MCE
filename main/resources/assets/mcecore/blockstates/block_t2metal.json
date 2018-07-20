@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "variant=manganese": { "model": "mcecore:block_manganese" },
+        "variant=steel": { "model": "mcecore:block_steel" },
+        "variant=cobalt": { "model": "mcecore:block_cobalt" },
+        "variant=silver": { "model": "mcecore:block_silver" },
+        "variant=nymphium": { "model": "mcecore:block_nymphium" },
+        "variant=xolgite": { "model": "mcecore:block_xolgite" },
+        "variant=nickel": { "model": "mcecore:block_nickel" },
+        "variant=orogate": { "model": "mcecore:block_orogate" }
+    }
+}
