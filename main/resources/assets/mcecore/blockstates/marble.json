@@ -1,0 +1,8 @@
+{
+    "variants": 
+    {
+        "variant=stone": { "model": "mcecore:marble_stone" },
+        "variant=cobble": { "model": "mcecore:marble_cobble" },
+        "variant=brick": { "model": "mcecore:marble_brick" }
+    }
+}
