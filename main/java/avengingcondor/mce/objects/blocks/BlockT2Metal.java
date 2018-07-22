@@ -28,7 +28,7 @@ public class BlockT2Metal extends Block implements IHasModel, IMetaName
 	public static final PropertyEnum<T2BlockEnumHandler.EnumType> VARIANT = PropertyEnum.<T2BlockEnumHandler.EnumType>create("variant", T2BlockEnumHandler.EnumType.class);
 	private String name;
 	
-	public BlockT2Metal(String name, Material material)
+	public BlockT2Metal(String name)
 	{
 		super(Material.IRON);
 		setUnlocalizedName(name);
@@ -36,7 +36,8 @@ public class BlockT2Metal extends Block implements IHasModel, IMetaName
 		setCreativeTab(Main.BASETAB);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, T2BlockEnumHandler.EnumType.manganese));
 		setHarvestLevel("pickaxe", 4);
-		setHardness(8);
+		setHardness(8.0f);
+		setResistance(45f);
 		
 		this.name = name;
 		

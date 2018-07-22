@@ -6,6 +6,8 @@ import java.util.List;
 import avengingcondor.mce.objects.blocks.BlockBase;
 import avengingcondor.mce.objects.blocks.BlockT1Metal;
 import avengingcondor.mce.objects.blocks.BlockT2Metal;
+import avengingcondor.mce.objects.blocks.Dolostone;
+import avengingcondor.mce.objects.blocks.Marble;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -14,8 +16,12 @@ public class BlockInit
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
 	//metal
-	public static final Block BLOCK_T1METAL = new BlockT1Metal("block_t1metal", Material.IRON);
-	public static final Block BLOCK_T2METAL = new BlockT2Metal("block_t2metal", Material.IRON);
+	public static final Block BLOCK_T1METAL = new BlockT1Metal("block_t1metal");
+	public static final Block BLOCK_T2METAL = new BlockT2Metal("block_t2metal");
+	
+	//stone
+	public static final Block DOLOSTONE = new Dolostone("dolostone");
+	public static final Block MARBLE = new Marble("marble");
 	
 	//ore
 	public static final Block ORE_COPPER = new BlockBase("ore_copper", Material.ROCK, "pickaxe", 1, 3.0f, 15f);

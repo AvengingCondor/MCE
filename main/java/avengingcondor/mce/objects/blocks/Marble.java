@@ -4,7 +4,7 @@ import avengingcondor.mce.Main;
 import avengingcondor.mce.init.BlockInit;
 import avengingcondor.mce.init.ItemInit;
 import avengingcondor.mce.objects.blocks.item.ItemBlockVariants;
-import avengingcondor.mce.util.handlers.T1BlockEnumHandler;
+import avengingcondor.mce.util.handlers.StoneEnumHandler;
 import avengingcondor.mce.util.interfaces.IHasModel;
 import avengingcondor.mce.util.interfaces.IMetaName;
 import net.minecraft.block.Block;
@@ -20,24 +20,25 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockT1Metal extends Block implements IHasModel, IMetaName 
+public class Marble extends Block implements IHasModel, IMetaName 
 {
 	
-	public static final PropertyEnum<T1BlockEnumHandler.EnumType> VARIANT = PropertyEnum.<T1BlockEnumHandler.EnumType>create("variant", T1BlockEnumHandler.EnumType.class);
+	public static final PropertyEnum<StoneEnumHandler.EnumType> VARIANT = PropertyEnum.<StoneEnumHandler.EnumType>create("variant", StoneEnumHandler.EnumType.class);
 	private String name;
 	
-	public BlockT1Metal(String name)
+	public Marble(String name)
 	{
-		super(Material.IRON);
+		super(Material.ROCK);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.BASETAB);
-		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, T1BlockEnumHandler.EnumType.copper));
-		setHarvestLevel("pickaxe", 1);
-		setHardness(5.0f);
-		setResistance(30f);
+		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, StoneEnumHandler.EnumType.stone));
+		setHarvestLevel("pickaxe", 8);
+		setHardness(6.5f);
+		setResistance(60f);
 		
 		this.name = name;
 		
@@ -48,19 +49,19 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public int damageDropped(IBlockState state)
 	{
-		return ((T1BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((StoneEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
 	}
 	
 	@Override
 	public int getMetaFromState(IBlockState state)
 	{
-		return ((T1BlockEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((StoneEnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
 	}
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
-		return this.getDefaultState().withProperty(VARIANT, T1BlockEnumHandler.EnumType.byMetadata(meta));
+		return this.getDefaultState().withProperty(VARIANT, StoneEnumHandler.EnumType.byMetadata(meta));
 	}
 	
 	@Override
@@ -72,7 +73,7 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
 	{
-		for(T1BlockEnumHandler.EnumType variant : T1BlockEnumHandler.EnumType.values())
+		for(StoneEnumHandler.EnumType variant : StoneEnumHandler.EnumType.values())
 		{
 			items.add(new ItemStack(this, 1, variant.getMeta()));
 		}
@@ -87,15 +88,26 @@ public class BlockT1Metal extends Block implements IHasModel, IMetaName
 	@Override
 	public String getSpecialName (ItemStack stack)
 	{
-		return T1BlockEnumHandler.EnumType.values()[stack.getItemDamage()].getName();
+		return StoneEnumHandler.EnumType.values()[stack.getItemDamage()].getName();
 	}
 	
 	@Override
 	public void registerModels() 
 	{
-		for (int i=0; i < T1BlockEnumHandler.EnumType.values().length; i++)
+		for (int i=0; i < StoneEnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "block_" + T1BlockEnumHandler.EnumType.values()[i].getName(), "inventory");
+			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "marble_" + StoneEnumHandler.EnumType.values()[i].getName(), "inventory");
+		}
+	}
+	
+	@Override
+	public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
+	{
+		super.getDrops(drops, world, pos, state, fortune);
+		if(this.getMetaFromState(state) == 0)
+		{
+			drops.clear();
+			drops.add(new ItemStack(BlockInit.MARBLE, 1, 1));
 		}
 	}
 }
