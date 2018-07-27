@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "I I",
+        "I I"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "mcecore:ingot_beryx"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:boots_beryx"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SS",
+        "SS"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "mcecore:dolostone",
+            "data": 0
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:dolostone",
+        "data": 2,
+        "count": 4
+    }
+}
