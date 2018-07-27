@@ -1,0 +1,11 @@
+{
+    "variants": 
+    {
+        "variant=persite": { "model": "mcecore:block_persite" },
+        "variant=nezmine": { "model": "mcecore:block_nezmine" },
+        "variant=lorite": { "model": "mcecore:block_lorite" },
+        "variant=eprese": { "model": "mcecore:block_eprese" },
+        "variant=hydris": { "model": "mcecore:block_hydris" },
+        "variant=mithril": { "model": "mcecore:block_mithril" }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "variant=gildrium": { "model": "mcecore:block_gildrium" },
+        "variant=dendrite": { "model": "mcecore:block_dendrite" },
+        "variant=beryx": { "model": "mcecore:block_beryx" },
+        "variant=orichalcum": { "model": "mcecore:block_orichalcum" },
+        "variant=aerite": { "model": "mcecore:block_aerite" },
+        "variant=palladium": { "model": "mcecore:block_palladium" },
+        "variant=alvium": { "model": "mcecore:block_alvium" },
+        "variant=whitegold": { "model": "mcecore:block_whitegold" }
+    }
+}
