@@ -20,8 +20,19 @@ public class SmeltingInit
 		GameRegistry.addSmelting(BlockInit.ORE_SILVER, new ItemStack(ItemInit.INGOT_SILVER, 1), 1.5f);
 		GameRegistry.addSmelting(BlockInit.ORE_NYMPHIUM, new ItemStack(ItemInit.INGOT_NYMPHIUM, 1), 1.2f);
 		GameRegistry.addSmelting(BlockInit.ORE_NICKEL, new ItemStack(ItemInit.INGOT_NICKEL, 1), 1.2f);
+		GameRegistry.addSmelting(BlockInit.ORE_PERSITE, new ItemStack(ItemInit.INGOT_PERSITE, 1), 1.5f);
+		GameRegistry.addSmelting(BlockInit.ORE_NEZMINE, new ItemStack(ItemInit.INGOT_NEZMINE, 1), 1.8f);
+		GameRegistry.addSmelting(BlockInit.ORE_GOLD_MCE, new ItemStack(Items.GOLD_INGOT, 1), 2.5f);
+		GameRegistry.addSmelting(BlockInit.ORE_EPRESE, new ItemStack(ItemInit.INGOT_EPRESE, 1), 2.0f);
+		GameRegistry.addSmelting(BlockInit.ORE_MITHRIL, new ItemStack(ItemInit.INGOT_MITHRIL, 1), 2.0f);
+		GameRegistry.addSmelting(BlockInit.ORE_GILDRIUM, new ItemStack(ItemInit.INGOT_GILDRIUM, 1), 2.2f);
+		GameRegistry.addSmelting(BlockInit.ORE_DENDRITE, new ItemStack(ItemInit.INGOT_DENDRITE, 1), 2.5f);
+		GameRegistry.addSmelting(BlockInit.ORE_ORICHALCUM, new ItemStack(ItemInit.INGOT_ORICHALCUM, 1), 2.8f);
+		GameRegistry.addSmelting(BlockInit.ORE_AERITE, new ItemStack(ItemInit.INGOT_AERITE, 1), 2.8f);
+		GameRegistry.addSmelting(BlockInit.ORE_PALLADIUM, new ItemStack(ItemInit.INGOT_PALLADIUM, 1), 3.5f);
 		GameRegistry.addSmelting(new ItemStack(BlockInit.DOLOSTONE, 1, 1), new ItemStack(BlockInit.DOLOSTONE, 1, 0), 0.1f);
 		GameRegistry.addSmelting(new ItemStack(BlockInit.MARBLE, 1, 1), new ItemStack(BlockInit.MARBLE, 1, 0), 0.1f);
+		GameRegistry.addSmelting(new ItemStack(BlockInit.LIMESTONE, 1, 1), new ItemStack(BlockInit.LIMESTONE, 1, 0), 0.2f);
 	}
 	
 }

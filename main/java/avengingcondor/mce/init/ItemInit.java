@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import avengingcondor.mce.objects.armor.ArmorBase;
+import avengingcondor.mce.objects.items.IncompleteAlloy;
 import avengingcondor.mce.objects.items.ItemBase;
 import avengingcondor.mce.objects.tools.ToolAxe;
 import avengingcondor.mce.objects.tools.ToolHoe;
@@ -38,6 +39,24 @@ public class ItemInit
 	public static final Item INGOT_XOLGITE = new ItemBase("ingot_xolgite");
 	public static final Item INGOT_NICKEL = new ItemBase("ingot_nickel");
 	public static final Item INGOT_OROGATE = new ItemBase("ingot_orogate");
+	public static final Item INGOT_PERSITE = new ItemBase("ingot_persite");
+	public static final Item INGOT_NEZMINE = new ItemBase("ingot_nezmine");
+	public static final Item INGOT_ROSEGOLD = new IncompleteAlloy("ingot_rosegold");
+	public static final Item INGOT_LORITE = new ItemBase("ingot_lorite");
+	public static final Item INGOT_EPRESE = new ItemBase("ingot_eprese");
+	public static final Item INGOT_DUON = new IncompleteAlloy("ingot_duon");
+	public static final Item INGOT_HYDRIS = new ItemBase("ingot_hydris");
+	public static final Item INGOT_MITHRIL = new ItemBase("ingot_mithril");
+	public static final Item INGOT_GILDRIUM = new ItemBase("ingot_gildrium");
+	public static final Item INGOT_DENDRITE = new ItemBase("ingot_dendrite");
+	public static final Item INGOT_HALIC = new IncompleteAlloy("ingot_halic");
+	public static final Item INGOT_BERYX = new ItemBase("ingot_beryx");
+	public static final Item INGOT_ORICHALCUM = new ItemBase("ingot_orichalcum");
+	public static final Item INGOT_AERITE = new ItemBase("ingot_aerite");
+	public static final Item INGOT_PALLADIUM = new ItemBase("ingot_palladium");
+	public static final Item INGOT_WHITEGOLD = new ItemBase("ingot_whitegold");
+	public static final Item INGOT_MANIUM = new IncompleteAlloy("ingot_manium");
+	public static final Item INGOT_ALVIUM = new ItemBase("ingot_alvium");
 	
 	//material
 	public static final ToolMaterial TOOL_COPPER = EnumHelper.addToolMaterial("tool_copper", 2, 180, 4.7f, 1.0f, 10).setRepairItem(new ItemStack(ItemInit.INGOT_COPPER));
@@ -54,6 +73,22 @@ public class ItemInit
 	public static final ArmorMaterial ARMOR_XOLGITE = EnumHelper.addArmorMaterial("armor_xolgite", Reference.MODID + ":xolgite", 30, new int[] {2,3,5,2}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f).setRepairItem(new ItemStack(ItemInit.INGOT_XOLGITE));
 	public static final ToolMaterial TOOL_OROGATE = EnumHelper.addToolMaterial("tool_orogate", 8, 1250, 7.5f, 3.0f, 12).setRepairItem(new ItemStack(ItemInit.INGOT_OROGATE));
 	public static final ArmorMaterial ARMOR_OROGATE = EnumHelper.addArmorMaterial("armor_orogate", Reference.MODID + ":orogate", 30, new int[] {2, 3, 5, 2}, 14, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f).setRepairItem(new ItemStack(ItemInit.INGOT_OROGATE));
+	public static final ToolMaterial TOOL_PERSITE = EnumHelper.addToolMaterial("tool_persite", 9, 1716, 8.5f, 3.5f, 14).setRepairItem(new ItemStack(ItemInit.INGOT_PERSITE));
+	public static final ArmorMaterial ARMOR_PERSITE = EnumHelper.addArmorMaterial("armor_persite", Reference.MODID + ":persite", 35, new int[] {3, 4, 6, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0f).setRepairItem(new ItemStack(ItemInit.INGOT_PERSITE));
+	public static final ToolMaterial TOOL_LORITE = EnumHelper.addToolMaterial("tool_lorite", 10, 1800, 9.0f, 3.5f, 20).setRepairItem(new ItemStack(ItemInit.INGOT_LORITE));
+	public static final ArmorMaterial ARMOR_LORITE = EnumHelper.addArmorMaterial("armor_lorite", Reference.MODID + ":lorite", 35, new int[] {3, 4, 6, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0f).setRepairItem(new ItemStack(ItemInit.INGOT_LORITE));
+	public static final ToolMaterial TOOL_HYDRIS = EnumHelper.addToolMaterial("tool_hydris", 11, 2200, 9.0f, 4.0f, 16).setRepairItem(new ItemStack(ItemInit.INGOT_HYDRIS));
+	public static final ArmorMaterial ARMOR_HYDRIS = EnumHelper.addArmorMaterial("armor_hydris", Reference.MODID + ":hydris", 42, new int[] {3, 4, 6, 2}, 14, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0f).setRepairItem(new ItemStack(ItemInit.INGOT_HYDRIS));
+	public static final ToolMaterial TOOL_MITHRIL = EnumHelper.addToolMaterial("tool_mithril", 12, 2176, 10.5f, 6.0f, 25).setRepairItem(new ItemStack(ItemInit.INGOT_MITHRIL));
+	public static final ArmorMaterial ARMOR_MITHRIL = EnumHelper.addArmorMaterial("armor_mithril", Reference.MODID + ":mithril", 42, new int[] {3, 4, 6, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0f).setRepairItem(new ItemStack(ItemInit.INGOT_MITHRIL));
+	public static final ToolMaterial TOOL_GILDRIUM = EnumHelper.addToolMaterial("tool_gildrium", 13, 2345, 11f, 8.0f, 22).setRepairItem(new ItemStack(ItemInit.INGOT_GILDRIUM));
+	public static final ArmorMaterial ARMOR_GILDRIUM = EnumHelper.addArmorMaterial("armor_gildrium", Reference.MODID + ":gildrium", 42, new int[] {3, 5, 7, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_GILDRIUM));
+	public static final ToolMaterial TOOL_BERYX = EnumHelper.addToolMaterial("tool_beryx", 14, 2532, 11.5f, 9.0f, 14).setRepairItem(new ItemStack(ItemInit.INGOT_BERYX));
+	public static final ArmorMaterial ARMOR_BERYX = EnumHelper.addArmorMaterial("armor_beryx", Reference.MODID + ":beryx", 45, new int[] {3, 5, 7, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_BERYX));
+	public static final ToolMaterial TOOL_ORICHALCUM = EnumHelper.addToolMaterial("tool_orichalcum", 15, 2808, 12f, 10.0f, 16).setRepairItem(new ItemStack(ItemInit.INGOT_ORICHALCUM));
+	public static final ArmorMaterial ARMOR_ORICHALCUM = EnumHelper.addArmorMaterial("armor_orichalcum", Reference.MODID + ":orichalcum", 45, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_ORICHALCUM));
+	public static final ToolMaterial TOOL_ALVIUM = EnumHelper.addToolMaterial("tool_alvium", 16, 3102, 13f, 13.0f, 14).setRepairItem(new ItemStack(ItemInit.INGOT_ALVIUM));
+	public static final ArmorMaterial ARMOR_ALVIUM = EnumHelper.addArmorMaterial("armor_alvium", Reference.MODID + ":alvium", 48, new int[] {3, 5, 7, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_ALVIUM));
 	
 	//tools
 	public static final Item AXE_COPPER = new ToolAxe("axe_copper", TOOL_COPPER, 7.0f, -3.2f);//lower(or raise I guess cause negative) second number by .1 each tier until they're at 3.0, maybe fuck with these later if I want, first number is the damage dealt by the axe-1
@@ -87,6 +122,46 @@ public class ItemInit
 	public static final Item HOE_OROGATE = new ToolHoe("hoe_orogate", TOOL_OROGATE);
 	public static final Item SHOVEL_OROGATE = new ToolShovel("shovel_orogate", TOOL_OROGATE);
 	public static final Item SWORD_OROGATE = new ToolSword("sword_orogate", TOOL_OROGATE);
+	public static final Item AXE_PERSITE = new ToolAxe("axe_persite", TOOL_PERSITE, 9.0f, -3.0f);
+	public static final Item PICKAXE_PERSITE = new ToolPickaxe("pickaxe_persite", TOOL_PERSITE);
+	public static final Item HOE_PERSITE = new ToolHoe("hoe_persite", TOOL_PERSITE);
+	public static final Item SHOVEL_PERSITE = new ToolShovel("shovel_persite", TOOL_PERSITE);
+	public static final Item SWORD_PERSITE = new ToolSword("sword_persite", TOOL_PERSITE);
+	public static final Item AXE_LORITE = new ToolAxe("axe_lorite", TOOL_LORITE, 9.5f, -3.0f);
+	public static final Item PICKAXE_LORITE = new ToolPickaxe("pickaxe_lorite", TOOL_LORITE);
+	public static final Item HOE_LORITE = new ToolHoe("hoe_lorite", TOOL_LORITE);
+	public static final Item SHOVEL_LORITE = new ToolShovel("shovel_lorite", TOOL_LORITE);
+	public static final Item SWORD_LORITE = new ToolSword("sword_lorite", TOOL_LORITE);
+	public static final Item AXE_HYDRIS = new ToolAxe("axe_hydris", TOOL_HYDRIS, 9.5f, -3.0f);
+	public static final Item PICKAXE_HYDRIS = new ToolPickaxe("pickaxe_hydris", TOOL_HYDRIS);
+	public static final Item HOE_HYDRIS = new ToolHoe("hoe_hydris", TOOL_HYDRIS);
+	public static final Item SHOVEL_HYDRIS = new ToolShovel("shovel_hydris", TOOL_HYDRIS);
+	public static final Item SWORD_HYDRIS = new ToolSword("sword_hydris", TOOL_HYDRIS);
+	public static final Item AXE_MITHRIL = new ToolAxe("axe_mithril", TOOL_MITHRIL, 10.0f, -3.0f);
+	public static final Item PICKAXE_MITHRIL = new ToolPickaxe("pickaxe_mithril", TOOL_MITHRIL);
+	public static final Item HOE_MITHRIL = new ToolHoe("hoe_mithril", TOOL_MITHRIL);
+	public static final Item SHOVEL_MITHRIL = new ToolShovel("shovel_mithril", TOOL_MITHRIL);
+	public static final Item SWORD_MITHRIL = new ToolSword("sword_mithril", TOOL_MITHRIL);
+	public static final Item AXE_GILDRIUM = new ToolAxe("axe_gildrium", TOOL_GILDRIUM, 10.0f, -3.0f);
+	public static final Item PICKAXE_GILDRIUM = new ToolPickaxe("pickaxe_gildrium", TOOL_GILDRIUM);
+	public static final Item HOE_GILDRIUM = new ToolHoe("hoe_gildrium", TOOL_GILDRIUM);
+	public static final Item SHOVEL_GILDRIUM = new ToolShovel("shovel_gildrium", TOOL_GILDRIUM);
+	public static final Item SWORD_GILDRIUM = new ToolSword("sword_gildrium", TOOL_GILDRIUM);
+	public static final Item AXE_BERYX = new ToolAxe("axe_beryx", TOOL_BERYX, 11.0f, -3.0f);
+	public static final Item PICKAXE_BERYX = new ToolPickaxe("pickaxe_beryx", TOOL_BERYX);
+	public static final Item HOE_BERYX = new ToolHoe("hoe_beryx", TOOL_BERYX);
+	public static final Item SHOVEL_BERYX = new ToolShovel("shovel_beryx", TOOL_BERYX);
+	public static final Item SWORD_BERYX = new ToolSword("sword_beryx", TOOL_BERYX);
+	public static final Item AXE_ORICHALCUM = new ToolAxe("axe_orichalcum", TOOL_ORICHALCUM, 11.0f, -3.0f);
+	public static final Item PICKAXE_ORICHALCUM = new ToolPickaxe("pickaxe_orichalcum", TOOL_ORICHALCUM);
+	public static final Item HOE_ORICHALCUM = new ToolHoe("hoe_orichalcum", TOOL_ORICHALCUM);
+	public static final Item SHOVEL_ORICHALCUM = new ToolShovel("shovel_orichalcum", TOOL_ORICHALCUM);
+	public static final Item SWORD_ORICHALCUM = new ToolSword("sword_orichalcum", TOOL_ORICHALCUM);
+	public static final Item AXE_ALVIUM = new ToolAxe("axe_alvium", TOOL_ALVIUM, 12.0f, -3.0f);
+	public static final Item PICKAXE_ALVIUM = new ToolPickaxe("pickaxe_alvium", TOOL_ALVIUM);
+	public static final Item HOE_ALVIUM = new ToolHoe("hoe_alvium", TOOL_ALVIUM);
+	public static final Item SHOVEL_ALVIUM = new ToolShovel("shovel_alvium", TOOL_ALVIUM);
+	public static final Item SWORD_ALVIUM = new ToolSword("sword_alvium", TOOL_ALVIUM);
 	
 	
 	//armor
@@ -118,4 +193,36 @@ public class ItemInit
 	public static final Item LEGGINGS_OROGATE = new ArmorBase("leggings_orogate", ARMOR_OROGATE, 2, EntityEquipmentSlot.LEGS);
 	public static final Item CHESTPLATE_OROGATE = new ArmorBase("chestplate_orogate", ARMOR_OROGATE, 1, EntityEquipmentSlot.CHEST);
 	public static final Item HELMET_OROGATE = new ArmorBase("helmet_orogate", ARMOR_OROGATE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_PERSITE = new ArmorBase("boots_persite", ARMOR_PERSITE, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_PERSITE = new ArmorBase("leggings_persite", ARMOR_PERSITE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_PERSITE = new ArmorBase("chestplate_persite", ARMOR_PERSITE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_PERSITE = new ArmorBase("helmet_persite", ARMOR_PERSITE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_LORITE = new ArmorBase("boots_lorite", ARMOR_LORITE, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_LORITE = new ArmorBase("leggings_lorite", ARMOR_LORITE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_LORITE = new ArmorBase("chestplate_lorite", ARMOR_LORITE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_LORITE = new ArmorBase("helmet_lorite", ARMOR_LORITE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_HYDRIS = new ArmorBase("boots_hydris", ARMOR_HYDRIS, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_HYDRIS = new ArmorBase("leggings_hydris", ARMOR_HYDRIS, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_HYDRIS = new ArmorBase("chestplate_hydris", ARMOR_HYDRIS, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_HYDRIS = new ArmorBase("helmet_hydris", ARMOR_HYDRIS, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_MITHRIL = new ArmorBase("boots_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_MITHRIL = new ArmorBase("leggings_mithril", ARMOR_MITHRIL, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_MITHRIL = new ArmorBase("chestplate_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_MITHRIL = new ArmorBase("helmet_mithril", ARMOR_MITHRIL, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_GILDRIUM = new ArmorBase("boots_gildrium", ARMOR_GILDRIUM, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_GILDRIUM = new ArmorBase("leggings_gildrium", ARMOR_GILDRIUM, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_GILDRIUM = new ArmorBase("chestplate_gildrium", ARMOR_GILDRIUM, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_GILDRIUM = new ArmorBase("helmet_gildrium", ARMOR_GILDRIUM, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_BERYX = new ArmorBase("boots_beryx", ARMOR_BERYX, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_BERYX = new ArmorBase("leggings_beryx", ARMOR_BERYX, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_BERYX = new ArmorBase("chestplate_beryx", ARMOR_BERYX, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_BERYX = new ArmorBase("helmet_beryx", ARMOR_BERYX, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_ORICHALCUM = new ArmorBase("boots_orichalcum", ARMOR_ORICHALCUM, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_ORICHALCUM = new ArmorBase("leggings_orichalcum", ARMOR_ORICHALCUM, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_ORICHALCUM = new ArmorBase("chestplate_orichalcum", ARMOR_ORICHALCUM, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_ORICHALCUM = new ArmorBase("helmet_orichalcum", ARMOR_ORICHALCUM, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_ALVIUM = new ArmorBase("boots_alvium", ARMOR_ALVIUM, 1, EntityEquipmentSlot.FEET);
+	public static final Item LEGGINGS_ALVIUM = new ArmorBase("leggings_alvium", ARMOR_ALVIUM, 2, EntityEquipmentSlot.LEGS);
+	public static final Item CHESTPLATE_ALVIUM = new ArmorBase("chestplate_alvium", ARMOR_ALVIUM, 1, EntityEquipmentSlot.CHEST);
+	public static final Item HELMET_ALVIUM = new ArmorBase("helmet_alvium", ARMOR_ALVIUM, 1, EntityEquipmentSlot.HEAD);
 }
