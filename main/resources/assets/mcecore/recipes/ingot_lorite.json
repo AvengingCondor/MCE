@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "mcecore:block_t3metal",
+            "data": 2
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:ingot_lorite",
+        "count": 9
+    }
+}

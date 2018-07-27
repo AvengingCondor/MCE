@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "mcecore:block_t3metal",
+            "data": 5
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:ingot_mithril",
+        "count": 9
+    }
+}

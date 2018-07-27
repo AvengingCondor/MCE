@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "mcecore:block_t4metal",
+            "data": 3
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:ingot_orichalcum",
+        "count": 9
+    }
+}
