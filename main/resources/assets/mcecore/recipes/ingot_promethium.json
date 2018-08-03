@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "mcecore:block_t5metal",
+            "data": 7
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcecore:ingot_promethium",
+        "count": 9
+    }
+}
