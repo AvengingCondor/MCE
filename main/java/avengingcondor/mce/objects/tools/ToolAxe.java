@@ -12,18 +12,30 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
-//import net.minecraft.item.ItemTool;
 
 public class ToolAxe extends ItemAxe implements IHasModel
 {
+	private EnumRarity rarity;
 	public ToolAxe(String name, ToolMaterial material, float attackDamage, float attackSpeed)
 	{
 		super(material, attackDamage, attackSpeed);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.TOOLTAB);
+		setRarity(EnumRarity.COMMON);
+		
+		ItemInit.ITEMS.add(this);
+	}
+	public ToolAxe(String name, ToolMaterial material, float attackDamage, float attackSpeed, EnumRarity r)
+	{
+		super(material, attackDamage, attackSpeed);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(Main.TOOLTAB);
+		setRarity(r);
 		
 		ItemInit.ITEMS.add(this);
 	}
@@ -32,5 +44,16 @@ public class ToolAxe extends ItemAxe implements IHasModel
 	public void registerModels() 
 	{
 		Main.proxy.registerItemRenderer(this, 0, "inventory");	
+	}
+	
+	public void setRarity(EnumRarity r)
+	{
+		this.rarity = r;
+	}
+	
+	@Override
+	public EnumRarity getRarity(ItemStack stack)
+	{
+		return rarity;	
 	}
 }

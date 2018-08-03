@@ -15,6 +15,7 @@ import avengingcondor.mce.util.Reference;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -57,6 +58,18 @@ public class ItemInit
 	public static final Item INGOT_WHITEGOLD = new ItemBase("ingot_whitegold");
 	public static final Item INGOT_MANIUM = new IncompleteAlloy("ingot_manium");
 	public static final Item INGOT_ALVIUM = new ItemBase("ingot_alvium");
+	public static final Item INGOT_SEDNUM = new ItemBase("ingot_sednum");
+	public static final Item INGOT_COLOVITE = new ItemBase("ingot_colovite");
+	public static final Item INGOT_NESYN = new IncompleteAlloy("ingot_nesyn");
+	public static final Item INGOT_PLATINUM = new ItemBase("ingot_platinum");
+	public static final Item INGOT_KRONITE = new ItemBase("ingot_kronite", EnumRarity.UNCOMMON);
+	public static final Item INGOT_BREYCALT = new ItemBase("ingot_breycalt");
+	public static final Item INGOT_SELINE = new IncompleteAlloy("ingot_seline");
+	public static final Item INGOT_MAKRINE = new ItemBase("ingot_makrine", EnumRarity.UNCOMMON);
+	public static final Item INGOT_FOTITE = new ItemBase("ingot_fotite");
+	public static final Item INGOT_PRIMIGON = new IncompleteAlloy("ingot_primigon");
+	public static final Item INGOT_PROMETHITE = new IncompleteAlloy("ingot_promethite");
+	public static final Item INGOT_PROMETHIUM = new ItemBase("ingot_promethium", EnumRarity.UNCOMMON);
 	
 	//material
 	public static final ToolMaterial TOOL_COPPER = EnumHelper.addToolMaterial("tool_copper", 2, 180, 4.7f, 1.0f, 10).setRepairItem(new ItemStack(ItemInit.INGOT_COPPER));
@@ -89,6 +102,12 @@ public class ItemInit
 	public static final ArmorMaterial ARMOR_ORICHALCUM = EnumHelper.addArmorMaterial("armor_orichalcum", Reference.MODID + ":orichalcum", 45, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_ORICHALCUM));
 	public static final ToolMaterial TOOL_ALVIUM = EnumHelper.addToolMaterial("tool_alvium", 16, 3102, 13f, 13.0f, 14).setRepairItem(new ItemStack(ItemInit.INGOT_ALVIUM));
 	public static final ArmorMaterial ARMOR_ALVIUM = EnumHelper.addArmorMaterial("armor_alvium", Reference.MODID + ":alvium", 48, new int[] {3, 5, 7, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 3.0f).setRepairItem(new ItemStack(ItemInit.INGOT_ALVIUM));
+	public static final ToolMaterial TOOL_KRONITE = EnumHelper.addToolMaterial("tool_kronite", 17, 3280, 14f, 14.0f, 14).setRepairItem(new ItemStack(ItemInit.INGOT_KRONITE));
+	public static final ArmorMaterial ARMOR_KRONITE = EnumHelper.addArmorMaterial("armor_kronite", Reference.MODID + ":kronite", 50, new int[] {3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0f).setRepairItem(new ItemStack(ItemInit.INGOT_KRONITE));
+	public static final ToolMaterial TOOL_MAKRINE = EnumHelper.addToolMaterial("tool_makrine", 18, 3820, 14.5f, 15.0f, 10).setRepairItem(new ItemStack(ItemInit.INGOT_MAKRINE));
+	public static final ArmorMaterial ARMOR_MAKRINE = EnumHelper.addArmorMaterial("armor_makrine", Reference.MODID + ":makrine", 50, new int[] {3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0f).setRepairItem(new ItemStack(ItemInit.INGOT_MAKRINE));
+	public static final ToolMaterial TOOL_PROMETHIUM = EnumHelper.addToolMaterial("tool_promethium", 19, 5000, 16f, 16.0f, 15).setRepairItem(new ItemStack(ItemInit.INGOT_PROMETHIUM));
+	public static final ArmorMaterial ARMOR_PROMETHIUM = EnumHelper.addArmorMaterial("armor_promethium", Reference.MODID + ":promethium", 60, new int[] {4, 7, 10, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.5f).setRepairItem(new ItemStack(ItemInit.INGOT_PROMETHIUM));
 	
 	//tools
 	public static final Item AXE_COPPER = new ToolAxe("axe_copper", TOOL_COPPER, 7.0f, -3.2f);//lower(or raise I guess cause negative) second number by .1 each tier until they're at 3.0, maybe fuck with these later if I want, first number is the damage dealt by the axe-1
@@ -162,6 +181,21 @@ public class ItemInit
 	public static final Item HOE_ALVIUM = new ToolHoe("hoe_alvium", TOOL_ALVIUM);
 	public static final Item SHOVEL_ALVIUM = new ToolShovel("shovel_alvium", TOOL_ALVIUM);
 	public static final Item SWORD_ALVIUM = new ToolSword("sword_alvium", TOOL_ALVIUM);
+	public static final Item AXE_KRONITE = new ToolAxe("axe_kronite", TOOL_KRONITE, 14.0f, -3.0f, EnumRarity.UNCOMMON);
+	public static final Item PICKAXE_KRONITE = new ToolPickaxe("pickaxe_kronite", TOOL_KRONITE, EnumRarity.UNCOMMON);
+	public static final Item HOE_KRONITE = new ToolHoe("hoe_kronite", TOOL_KRONITE, EnumRarity.UNCOMMON);
+	public static final Item SHOVEL_KRONITE = new ToolShovel("shovel_kronite", TOOL_KRONITE, EnumRarity.UNCOMMON);
+	public static final Item SWORD_KRONITE = new ToolSword("sword_kronite", TOOL_KRONITE, EnumRarity.UNCOMMON);
+	public static final Item AXE_MAKRINE = new ToolAxe("axe_makrine", TOOL_MAKRINE, 14.0f, -3.0f, EnumRarity.UNCOMMON);
+	public static final Item PICKAXE_MAKRINE = new ToolPickaxe("pickaxe_makrine", TOOL_MAKRINE, EnumRarity.UNCOMMON);
+	public static final Item HOE_MAKRINE = new ToolHoe("hoe_makrine", TOOL_MAKRINE, EnumRarity.UNCOMMON);
+	public static final Item SHOVEL_MAKRINE = new ToolShovel("shovel_makrine", TOOL_MAKRINE, EnumRarity.UNCOMMON);
+	public static final Item SWORD_MAKRINE = new ToolSword("sword_makrine", TOOL_MAKRINE, EnumRarity.UNCOMMON);
+	public static final Item AXE_PROMETHIUM = new ToolAxe("axe_promethium", TOOL_PROMETHIUM, 14.0f, -3.0f, EnumRarity.UNCOMMON);
+	public static final Item PICKAXE_PROMETHIUM = new ToolPickaxe("pickaxe_promethium", TOOL_PROMETHIUM, EnumRarity.UNCOMMON);
+	public static final Item HOE_PROMETHIUM = new ToolHoe("hoe_promethium", TOOL_PROMETHIUM, EnumRarity.UNCOMMON);
+	public static final Item SHOVEL_PROMETHIUM = new ToolShovel("shovel_promethium", TOOL_PROMETHIUM, EnumRarity.UNCOMMON);
+	public static final Item SWORD_PROMETHIUM = new ToolSword("sword_promethium", TOOL_PROMETHIUM, EnumRarity.UNCOMMON);
 	
 	
 	//armor
@@ -225,4 +259,16 @@ public class ItemInit
 	public static final Item LEGGINGS_ALVIUM = new ArmorBase("leggings_alvium", ARMOR_ALVIUM, 2, EntityEquipmentSlot.LEGS);
 	public static final Item CHESTPLATE_ALVIUM = new ArmorBase("chestplate_alvium", ARMOR_ALVIUM, 1, EntityEquipmentSlot.CHEST);
 	public static final Item HELMET_ALVIUM = new ArmorBase("helmet_alvium", ARMOR_ALVIUM, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BOOTS_KRONITE = new ArmorBase("boots_kronite", ARMOR_KRONITE, 1, EntityEquipmentSlot.FEET, EnumRarity.UNCOMMON);
+	public static final Item LEGGINGS_KRONITE = new ArmorBase("leggings_kronite", ARMOR_KRONITE, 2, EntityEquipmentSlot.LEGS, EnumRarity.UNCOMMON);
+	public static final Item CHESTPLATE_KRONITE = new ArmorBase("chestplate_kronite", ARMOR_KRONITE, 1, EntityEquipmentSlot.CHEST, EnumRarity.UNCOMMON);
+	public static final Item HELMET_KRONITE = new ArmorBase("helmet_kronite", ARMOR_KRONITE, 1, EntityEquipmentSlot.HEAD, EnumRarity.UNCOMMON);
+	public static final Item BOOTS_MAKRINE = new ArmorBase("boots_makrine", ARMOR_MAKRINE, 1, EntityEquipmentSlot.FEET, EnumRarity.UNCOMMON);
+	public static final Item LEGGINGS_MAKRINE = new ArmorBase("leggings_makrine", ARMOR_MAKRINE, 2, EntityEquipmentSlot.LEGS, EnumRarity.UNCOMMON);
+	public static final Item CHESTPLATE_MAKRINE = new ArmorBase("chestplate_makrine", ARMOR_MAKRINE, 1, EntityEquipmentSlot.CHEST, EnumRarity.UNCOMMON);
+	public static final Item HELMET_MAKRINE = new ArmorBase("helmet_makrine", ARMOR_MAKRINE, 1, EntityEquipmentSlot.HEAD, EnumRarity.UNCOMMON);
+	public static final Item BOOTS_PROMETHIUM = new ArmorBase("boots_promethium", ARMOR_PROMETHIUM, 1, EntityEquipmentSlot.FEET, EnumRarity.UNCOMMON);
+	public static final Item LEGGINGS_PROMETHIUM = new ArmorBase("leggings_promethium", ARMOR_PROMETHIUM, 2, EntityEquipmentSlot.LEGS, EnumRarity.UNCOMMON);
+	public static final Item CHESTPLATE_PROMETHIUM = new ArmorBase("chestplate_promethium", ARMOR_PROMETHIUM, 1, EntityEquipmentSlot.CHEST, EnumRarity.UNCOMMON);
+	public static final Item HELMET_PROMETHIUM = new ArmorBase("helmet_promethium", ARMOR_PROMETHIUM, 1, EntityEquipmentSlot.HEAD, EnumRarity.UNCOMMON);
 }

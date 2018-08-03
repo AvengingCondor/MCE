@@ -1,7 +1,8 @@
 package avengingcondor.mce.tabs;
 
-import avengingcondor.mce.init.ItemInit;
+import avengingcondor.mce.init.BlockInit;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class BasicTab extends CreativeTabs 
@@ -13,6 +14,6 @@ public class BasicTab extends CreativeTabs
 	
 	public ItemStack getTabIconItem()
 	{
-		return new ItemStack(ItemInit.INGOT_COPPER); //change to copper ore when added: Item.getItemFromBlock(BlockInit.ORE_COPPER
+		return new ItemStack(Item.getItemFromBlock(BlockInit.ORE_COPPER));
 	}
 }

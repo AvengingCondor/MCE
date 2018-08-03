@@ -2,6 +2,7 @@ package avengingcondor.mce.util.handlers;
 
 import avengingcondor.mce.init.BlockInit;
 import avengingcondor.mce.init.ItemInit;
+import avengingcondor.mce.util.compat.oreDictionaryCompat;
 import avengingcondor.mce.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -46,6 +47,11 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+	
+	public static void initRegistries()
+	{
+		oreDictionaryCompat.registerOres();
 	}
 	
 	@SubscribeEvent

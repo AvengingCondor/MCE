@@ -3,11 +3,13 @@ package avengingcondor.mce.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import avengingcondor.mce.objects.blocks.Basalt;
 import avengingcondor.mce.objects.blocks.BlockBase;
 import avengingcondor.mce.objects.blocks.BlockT1Metal;
 import avengingcondor.mce.objects.blocks.BlockT2Metal;
 import avengingcondor.mce.objects.blocks.BlockT3Metal;
 import avengingcondor.mce.objects.blocks.BlockT4Metal;
+import avengingcondor.mce.objects.blocks.BlockT5Metal;
 import avengingcondor.mce.objects.blocks.Dolostone;
 import avengingcondor.mce.objects.blocks.Limestone;
 import avengingcondor.mce.objects.blocks.Marble;
@@ -23,11 +25,13 @@ public class BlockInit
 	public static final Block BLOCK_T2METAL = new BlockT2Metal("block_t2metal");
 	public static final Block BLOCK_T3METAL = new BlockT3Metal("block_t3metal");
 	public static final Block BLOCK_T4METAL = new BlockT4Metal("block_t4metal");
+	public static final Block Block_T5Metal = new BlockT5Metal("block_t5metal");
 	
 	//stone
 	public static final Block DOLOSTONE = new Dolostone("dolostone");
 	public static final Block MARBLE = new Marble("marble");
 	public static final Block LIMESTONE = new Limestone("limestone");
+	public static final Block BASALT = new Basalt("basalt");
 	
 	//ore
 	public static final Block ORE_COPPER = new BlockBase("ore_copper", Material.ROCK, "pickaxe", 1, 3.0f, 15f);
@@ -49,4 +53,9 @@ public class BlockInit
 	public static final Block ORE_ORICHALCUM = new BlockBase("ore_orichalcum", Material.ROCK, "pickaxe", 14, 12.2f, 60f);
 	public static final Block ORE_AERITE = new BlockBase("ore_aerite", Material.ROCK, "pickaxe", 15, 13.0f, 60f);
 	public static final Block ORE_PALLADIUM = new BlockBase("ore_palladium", Material.ROCK, "pickaxe", 15, 12.6f, 60f);
+	public static final Block ORE_SEDNUM = new BlockBase("ore_sednum", Material.ROCK, "pickaxe", 16, 13.5f, 75f);
+	public static final Block ORE_COLOVITE = new BlockBase("ore_colovite", Material.ROCK, "pickaxe", 16, 13.2f, 75f);
+	public static final Block ORE_PLATINUM = new BlockBase("ore_platinum", Material.ROCK, "pickaxe", 16, 13.0f, 75f);
+	public static final Block ORE_BREYCALT = new BlockBase("ore_breycalt", Material.ROCK, "pickaxe", 17, 15.0f, 75f);
+	public static final Block ORE_FOTITE = new BlockBase("ore_fotite", Material.ROCK, "pickaxe", 18, 17.5f, 75f);
 }

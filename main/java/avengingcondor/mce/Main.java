@@ -5,6 +5,7 @@ import avengingcondor.mce.proxy.CommonProxy;
 import avengingcondor.mce.tabs.BasicTab;
 import avengingcondor.mce.tabs.ToolTab;
 import avengingcondor.mce.util.Reference;
+import avengingcondor.mce.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -28,7 +29,10 @@ public class Main
     public static CommonProxy proxy;
 
     @EventHandler
-    public static void preInit(FMLPreInitializationEvent event) {}
+    public static void preInit(FMLPreInitializationEvent event) 
+    {
+    	RegistryHandler.initRegistries();//****
+    }
     
     @EventHandler
     public void init(FMLInitializationEvent event) 
