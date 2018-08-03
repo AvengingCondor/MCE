@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "variant=sednum": { "model": "mcecore:block_sednum" },
+        "variant=colovite": { "model": "mcecore:block_colovite" },
+        "variant=platinum": { "model": "mcecore:block_platinum" },
+        "variant=kronite": { "model": "mcecore:block_kronite" },
+        "variant=breycalt": { "model": "mcecore:block_breycalt" },
+        "variant=makrine": { "model": "mcecore:block_makrine" },
+        "variant=fotite": { "model": "mcecore:block_fotite" },
+        "variant=promethium": { "model": "mcecore:block_promethium" }
+    }
+}
